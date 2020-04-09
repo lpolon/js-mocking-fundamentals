@@ -10,3 +10,4 @@ assert.strictEqual(winner, 'Kent C. Dodds')
 
 // cleanup
 utils.getWinner = originalGetWinner
+ 

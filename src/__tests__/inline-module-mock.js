@@ -1,7 +1,9 @@
 const thumbWar = require('../thumb-war')
 const utilsMock = require('../utils')
 
-jest.mock('../utils', () => {
+jest.mock('../utils', 
+// factory function returns the mocked version of the module
+() => {
   return {
     getWinner: jest.fn((p1, p2) => p1)
   }
